@@ -72,6 +72,14 @@ nav .wrap-nav{height: 37px;}
 .minimenu div{overflow: hidden;position: relative;font: 18px/40px 'PT Sans Narrow';color: #ffffff;text-align:center;text-transform:uppercase;font-weight:bold;}
 .minimenu select{position: absolute;top: 0px;left: 0px;width: 100%;height: 100%; opacity: 0;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);	cursor: pointer;}
 
+ul.navigation, ul.navigation ul.sub-menu {padding:0;margin: 0;}
+ul.navigation ul.sub-menu li {list-style-type: none;display: inline-block;margin-top: -3px;}
+ul.navigation li ul.sub-menu li a {text-decoration: none;color: #4cc9e9;background: #fff;padding: 7px;display:inline-block;margin-top: -15px;width: 130px;border-radius: 0px;}
+ul.navigation li {position: relative;}
+ul.navigation li ul.sub-menu {display:none;position: absolute;left: 0;}
+ul.navigation li:hover ul.sub-menu {display:block;}
+ul.navigation ul.sub-menu li:hover a{border-radius: 0px !important;color:#fff; background-color:#4cc9e9;} 
+
 /* -------------------------------------------- */
 /* ------------------Navigation---------------- */
 
@@ -182,7 +190,7 @@ footer {background-color:#333;}
 .about{background: #fff;}
 .about .who{color: #fff; font-family: 'Oswald'; font-size: 30px; padding: 40px 0px 20px 0px;}
 
-.contact{background: #fff; min-height: 600px;}
+.contact{background: #fff; min-height: 850px;}
 .contact .who{color: #fff; font-family: 'Oswald'; font-size: 30px; padding: 40px 0px 40px 0px;}
 .contact .con-q{font-family: 'Oswald'; font-size: 28px; color: #4cc9e9}
 .contact table input, .contact table textarea{font-family: 'Oswald'; border-radius: 0px; background: #f8f8f8; color: #96a0a2;text-align: left; width: 50%;}
@@ -190,14 +198,14 @@ footer {background-color:#333;}
 .contact table textarea{position: absolute; left: 52%;top: 55px; height: 200px;}
 .contact #submit{font-family: 'Oswald'; color: #fff; background: #4cc9e9; border: 1px solid #4cc9e9; padding: 5px 15px;}
 
-.partner{background: #fff; min-height: 600px;}
+.partner{background: #fff; min-height: 850px;}
 .partner .partner-l{background: #4cc9e9;  padding: 40px 40px; color:#fff; width: 85px;border-radius: 95px;}
 .partner .who{color: #fff; font-family: 'Oswald'; font-size: 30px; padding: 40px 0px 40px 0px;}
 .partner #submit{font-family: 'Oswald'; font-size: 20px; color: #fff; background: #4cc9e9; border: 1px solid #4cc9e9; padding: 5px 15px;}
 
 .partner #submit:hover, .contact #submit:hover{cursor: pointer;}
 
-.services{background: #fff; min-height: 600px;}
+.services{background: #fff;}
 .services .partner-l{background: #4cc9e9;  padding: 40px 40px; color:#fff; width: 70px;border-radius: 95px;}
 .services .who{color: #fff; font-family: 'Oswald'; font-size: 30px; padding: 40px 0px 40px 0px;}
 .services .s-title{font-family: 'Oswald'; font-weight: normal; font-size: 30px; color: #4cc9e9; line-height: 50px;}
