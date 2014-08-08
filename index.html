@@ -24,7 +24,7 @@
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>			
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>		
     <script type="text/javascript" src="js/jssor.core.js"></script>
     <script type="text/javascript" src="js/jssor.utils.js"></script>
     <script type="text/javascript" src="js/jssor.slider.js"></script>
@@ -36,11 +36,11 @@
                 $PauseOnHover: true,                               //[Optional] Whether to pause when mouse over if a slideshow is auto playing, default value is false
 
                 $ArrowKeyNavigation: true,   			            //Allows arrow key to navigate or not
-                $SlideWidth: 750,                                   //[Optional] Width of every slide in pixels, the default is width of 'slides' container
+                $SlideWidth: 1000,                                   //[Optional] Width of every slide in pixels, the default is width of 'slides' container
                 //$SlideHeight: 300,                                  //[Optional] Height of every slide in pixels, the default is width of 'slides' container
                 $SlideSpacing: 0, 					                //Space between each slide in pixels
                 $DisplayPieces: 2,                                  //Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-                $ParkingPosition: 100,                                //The offset position to park slide (this options applys only when slideshow disabled).
+                $ParkingPosition: 190,                                //The offset position to park slide (this options applys only when slideshow disabled).
 
                 $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
                     $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
@@ -55,15 +55,19 @@
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizes
             function ScaleSlider() {
-                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
-                if (parentWidth)
-                    jssor_slider1.$SetScaleWidth(Math.min(parentWidth, 1000));
-                else
-                    window.setTimeout(ScaleSlider, 30);
-            }
-
-            ScaleSlider();
-			$(window).bind('resize', ScaleSlider);
+	            var parentWidth = $('#slider1_container').parent().width();
+	            if (parentWidth) {
+	                jssor_slider1.$SetScaleWidth(parentWidth);
+	            }
+	            else
+	                window.setTimeout(ScaleSlider, 30);
+	        }
+	        //Scale slider after document ready
+	        ScaleSlider();
+	        if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+	            //Capture window resize event
+	            $(window).bind('resize', ScaleSlider);
+	        }
         });
     </script>
 	
@@ -115,8 +119,8 @@
 			<div id="main-content" class="col-2-3">
 				<div class="wrap-col" style="background: url(images/etatch-slider-pattern.png);">
 						<center>
-						<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1000px; height: 520px; overflow: hidden;background: url(images/etatch-slider-pattern.png);">
-					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 520px;overflow: hidden;">
+						<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1400px; height: 520px; overflow: hidden;background: url(images/etatch-slider-pattern.png);">
+					        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1400px; height: 520px;overflow: hidden;">
 					            <div style="cursor:pointer!important;">
 					            	<a href="/post.html">
 						            	<img u="image" src="images/etatch-sample-slider1.jpg"/>
