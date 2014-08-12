@@ -60,8 +60,7 @@ nav .wrap-nav{height: 37px;}
 
 .menu ul {list-style: none;margin: 0;padding: 0;}
 .menu  ul li {position: relative;float: left;}
-.menu  ul li:hover {}
-.menu  ul li a {font-size: 14px; line-height:14px;color:#fff;display: block;padding: 16px 10px;margin-bottom: 5px;z-index: 6;position: relative; text-transform:uppercase; }
+.menu  ul li a {font-size: 14px; line-height:14px;color:#fff;display: block;padding: 16px 10px;margin-bottom: 5px;z-index: 6;position: relative; text-transform:uppercase; -webkit-transition: all 0.3s ease-in;-moz-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;}
 .menu  ul li:hover a {color:#4cc9e9; background-color:#fff;}
 
 .minimenu{display:none;}
@@ -76,7 +75,7 @@ ul.navigation, ul.navigation ul.sub-menu {padding:0;margin: 0;}
 ul.navigation ul.sub-menu li {list-style-type: none;display: inline-block;margin-top: -3px;}
 ul.navigation li ul.sub-menu li a {text-decoration: none;color: #4cc9e9;background: #fff;padding: 13px;display:inline-block;margin-top: -2px;width: 130px;border-radius: 0px;}
 ul.navigation li {position: relative;}
-ul.navigation li ul.sub-menu {display:none;position: absolute;left: 0;}
+ul.navigation li ul.sub-menu {display:none;position: absolute;left: 0;box-shadow: 0px 5px 5px #888888;}
 ul.navigation li:hover ul.sub-menu {display:block;}
 ul.navigation ul.sub-menu li:hover a{border-radius: 0px !important;color:#fff; background-color:#4cc9e9;} 
 
@@ -132,6 +131,8 @@ footer {background-color:#333;}
 .copyright{text-align:center; background:#4cc9e9; padding:10px 0px;color:#fff;font-size: 12px; font-family: 'Source Sans Pro', sans-serif; text-shadow: 0px -1px 0px #25a9ff;}
 .e-footer{text-align:center;padding:10px 0px;color:#fff;font-size: 12px; font-family: 'Source Sans Pro', sans-serif;}
 .e-footer p i{margin-right: 15px;}
+.e-footer p a{-webkit-transition: all 0.3s ease-in;-moz-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;}
+.e-footer p a:hover{color:#4cc9e9;}
 
 /* -------------------------------------------- */
 /* ------------------Components-------------------- */
@@ -171,7 +172,8 @@ footer {background-color:#333;}
 .jssora13rdn {background-position: -310px -35px;}
 #slider1_container{top:-4px !important;}
 #slider1_container h3, #slider1_container p{margin-left: 19px; text-align: left; color: #fff;margin-top: -10px;}
-#slider1_container h3{ font-family: 'Oswald'; font-size: 24px; background: #4cc9e9; padding: 10px; position: absolute; bottom: 95px;}
+#slider1_container h3{ font-family: 'Oswald'; font-size: 24px; background: #4cc9e9; padding: 10px; position: absolute; bottom: 95px;-webkit-transition: all 0.3s ease-in;-moz-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;}
+#slider1_container h3:hover{background: #fff; color: #4cc9e9;}
 #slider1_container div p{ font-family: 'Source Sans Pro'; font-size: 24px; background: #343839; padding: 10px;width: 922px;}
 #slider1_container .slider-text{position: absolute; bottom: 0px; padding: 10px; padding-bottom: 0px;}
 
@@ -184,8 +186,8 @@ footer {background-color:#333;}
 .world-div .world-title{font-family: 'Oswald'; font-weight: bold; font-size: 16px; color: #343839;}
 .world-div .world-desc{font-family: 'Source Sans Pro'; font-size: 18px; color: #343839;}
 .world-table td{padding-right: 65px; padding-top: 10px;}
-.world-table .world-category a{font-family: 'Oswald'; font-size: 12px; position: absolute; background: #4cc9ff; color:#fff; padding: 3px 15px 3px 20px;margin-top: 0px;margin-top: -150px;}
-.world-table .world-category a:hover{text-decoration: underline;}
+.world-table .world-category a{font-family: 'Oswald'; font-size: 12px; position: absolute; background: #4cc9ff; color:#fff; padding: 3px 15px 3px 20px;margin-top: 0px;margin-top: -150px;-webkit-transition: all 0.3s ease-in;-moz-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;}
+.world-table .world-category:hover a{background: #fff; color:#4cc9ff;}
 
 .about{background: #fff;}
 .about .who{color: #fff; font-family: 'Oswald'; font-size: 30px; padding: 40px 0px 20px 0px;}
