@@ -129,7 +129,7 @@ ul.navigation ul.sub-menu li:hover a{border-radius: 0px !important;color:#fff; b
 footer {background-color:#333;}
 .e-footer a, .copyright a{text-decoration:underline; color:#fff; }
 .copyright{text-align:center; background:#4cc9e9; padding:10px 0px;color:#fff;font-size: 12px; font-family: 'Source Sans Pro', sans-serif; text-shadow: 0px -1px 0px #25a9ff;}
-.e-footer{text-align:center;padding:10px 0px;color:#fff;font-size: 12px; font-family: 'Source Sans Pro', sans-serif;}
+.e-footer{text-align:center;padding:10px 0px !important;color:#fff;font-size: 12px; font-family: 'Source Sans Pro', sans-serif;}
 .e-footer p i{margin-right: 15px;}
 .e-footer p a{-webkit-transition: all 0.3s ease-in;-moz-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;}
 .e-footer p a:hover{color:#4cc9e9;}
