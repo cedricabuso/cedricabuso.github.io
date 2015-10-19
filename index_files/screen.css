@@ -44,7 +44,7 @@ a:hover {
 /*TYPOGRAPHY*/
 h1{
     font-size: 1.2em;
-    font-family: 'Lato';
+    font-family: monospace;
     position: absolute;
     width: 141px;
     text-align: center;
