@@ -1,0 +1,223 @@
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Freedom! is a unique YouTube partnership network connecting people &amp; tools - towards success">
+        <meta name="keywords" content="MCN Freedom!">
+        <meta name="google-site-verification" content="q0WvKejZNZBbgQjfFGKm43So7KRFd0YLt1osuDugda8">
+        <meta name="author" content="Freedom! - YouTube Partnership Network">
+        <meta name="copyright" content="2018">
+        <meta name="application-name" content="Freedom!">
+
+        <!-- for Facebook -->
+        <meta property="og:title" content="Freedom! - YouTube Partnership Network">
+        <meta property="og:type" content="article">
+        <meta property="og:image" content="https://www.freedom.tm/images/frdm-hero-logo.png">
+        <meta property="og:description" content="Freedom! is a unique YouTube partnership network connecting people &amp; tools - towards success">
+
+        <!-- for Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Freedom! - YouTube Partnership Network">
+        <meta name="twitter:description" content="Freedom! is a unique YouTube partnership network connecting people &amp; tools - towards success">
+        <meta name="twitter:image" content="https://www.freedom.tm/images/frdm-hero-logo.png">
+
+        <link rel="shortcut icon" href="https://s3.amazonaws.com/freedom.tm/assets/ico/favicon.png">
+
+        <title>Freedom! Partner Dashboard</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style type="text/css">
+            .mntnc-div {
+                min-height: 100%;
+                padding: 5%;
+            }
+
+            .mntnc-tv {
+                background: url('//s3.amazonaws.com/freedom.tm/assets/maintenance/computer.png') no-repeat;
+                background-position: center;
+                height: 474px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .video-container {
+                display: flex;
+                align-self: center;
+            }
+
+            .maintenance-table {
+                display: inline-block;
+            }
+
+            .maintenance-table > img:first-child {
+                margin-top: -130px;
+                z-index: 999999;
+            }
+
+             .error-message {
+                 text-align: center;
+             }
+
+            .error-message h1,
+            .error-message h2,
+            .error-message h3 {
+                color: #fff;
+            }
+
+            .error-message h1 {
+                font-size: 100px;
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+
+            .error-message h2 {
+                font-family: 'Lato', sans-serif;
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+
+            .btn-rh {
+                background: transparent;
+                color: #fff;
+                text-decoration: underline;
+                font-weight: 700;
+            }
+
+            .btn-rh:hover {
+                color: #fff;
+            }
+
+            .rh-wrap i {
+                padding-right: 10px;
+            }
+
+            .rh-wrap {
+                text-align: center;
+            }
+
+            body, h1, h2, h3, h4, h5, h6 {
+                font-family: 'Lato', Arial, Helvetica, sans-serif;
+                color: #666666;
+                margin: 0;
+            }
+
+            body {
+                height: 100vh;
+                background: linear-gradient(120deg, #212121, #263238, #0D47A1, #455A64, #1A237E, #004D40);
+                background-size: 1200% 1200%;
+                justify-content: center;
+
+                -webkit-animation: bganimate 43s ease infinite;
+                -moz-animation: bganimate 43s ease infinite;
+                animation: bganimate 43s ease infinite;
+            }
+
+            @-webkit-keyframes bganimate {
+                0%{background-position:0% 11%}
+                50%{background-position:100% 90%}
+                100%{background-position:0% 11%}
+            }
+            @-moz-keyframes bganimate {
+                0%{background-position:0% 11%}
+                50%{background-position:100% 90%}
+                100%{background-position:0% 11%}
+            }
+            @keyframes bganimate {
+                0%{background-position:0% 11%}
+                50%{background-position:100% 90%}
+                100%{background-position:0% 11%}
+            }
+
+            @-webkit-keyframes gearrotate {
+                0%{transform:rotate(0deg)}
+                50%{transform:rotate(130deg)}
+                60%{transform:rotate(100deg)}
+                100%{transform:rotate(360deg)}
+            }
+            @-moz-keyframes gearrotate {
+                0%{transform:rotate(0deg)}
+                50%{transform:rotate(130deg)}
+                60%{transform:rotate(100deg)}
+                100%{transform:rotate(360deg)}
+            }
+            @keyframes gearrotate {
+                0%{transform:rotate(0deg)}
+                50%{transform:rotate(130deg)}
+                60%{transform:rotate(100deg)}
+                100%{transform:rotate(360deg)}
+            }
+
+            i.material-icons.large {
+                -webkit-animation: gearrotate 3s ease-in-out infinite;
+                -moz-animation: gearrotate 3s ease-in-out infinite;
+                -o-animation: gearrotate 3s ease-in-out infinite;
+                animation: gearrotate 3s ease-in-out infinite;
+                font-size: 144px;
+                color: #ddd;
+            }
+
+            i.material-icons.small {
+                -webkit-animation: gearrotate 3s ease-in-out infinite reverse;
+                -moz-animation: gearrotate 3s ease-in-out infinite reverse;
+                -o-animation: gearrotate 3s ease-in-out infinite reverse;
+                animation: gearrotate 3s ease-in-out infinite reverse;
+                font-size: 64px;
+                color: #ddd;
+            }
+
+            .small-gear {
+                transform: translate(-15px,-70px);
+            }
+
+            .large-gear {
+                transform: translate(18px,-40px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="mntnc-div">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="error-wrap">
+                        <div class="error-message">
+                            <h1>
+                                <img class="img-responsive center-block" src="//s3.amazonaws.com/freedom.tm/assets/maintenance/logo.png">
+                            </h1>
+                            <h3 style="font-size: 46px; padding-bottom: 5px;">
+                                We are currently undergoing maintenance!
+                            </h3>
+                            <h4 style="font-size: 22px; color: white">
+                                We'll be right back. Thank you for your patience.
+                            </h4>
+                            <br>
+                            <div class="mntnc-tv">
+                                <div class="video-container">
+                                    <div class="large-gear">
+                                        <i class="material-icons large">settings</i>
+                                    </div>
+                                    <div class="small-gear">
+                                        <i class="material-icons small">settings</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="maintenance-table">
+                                    <img class="img-responsive" src="//s3.amazonaws.com/freedom.tm/assets/maintenance/lampshade.png">
+                                    <img class="img-responsive" src="//s3.amazonaws.com/freedom.tm/assets/maintenance/table.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rh-wrap">
+                            <a href="https://freedom.support.tm" class="btn btn-rh btn-lg">
+                                https://freedom.support.tm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
